@@ -1,5 +1,7 @@
 package day17;
 
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,10 +33,18 @@ public class OrangeHRMLoginTest {
 		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button")).click();
 		
 		Thread.sleep(3000);
-		String dashboardTitle =  driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[1]/span/h6")).getText();
+		String dashboardTitle = "";
+		
+		try {
+			dashboardTitle =  driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[1]/span/h6")).getText();
+		} catch (NoSuchElementException e) {
+			
+		}
+		
 		String expectedTitle = "Dashboard";
-		if(expectedTitle.equals(dashboardTitle)) {
-			System.out.println("i am on dashboard page");
+		
+		if(dashboardTitle.equals(expectedTitle)) {
+			System.out.println("I am on dashboard page");
 		}else {
 			System.out.println("test failed");
 		}
