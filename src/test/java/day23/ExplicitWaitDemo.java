@@ -26,9 +26,10 @@ public class ExplicitWaitDemo {
 		WebElement useranme=mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Username']")));
 		useranme.sendKeys("Admin");
 		
-		
 		WebElement password=mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Password']")));
 		password.sendKeys("admin123");
+		
+		driver.quit();
 	
 	}
 

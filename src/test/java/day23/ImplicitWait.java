@@ -18,6 +18,7 @@ public class ImplicitWait {
 		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123");
 	
+		driver.quit();
 	}
 
 }

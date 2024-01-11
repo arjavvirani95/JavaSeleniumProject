@@ -15,13 +15,14 @@ public class NavigationalCommands {
 		System.out.println(driver.getCurrentUrl());
 	
 		driver.navigate().back();
-		System.out.println(driver.getCurrentUrl()); // amzon
+		System.out.println(driver.getCurrentUrl()); // amazon
 		
 		driver.navigate().forward();
 		System.out.println(driver.getCurrentUrl()); // flipkart
 		
 		driver.navigate().refresh();  // refresh the page
 		
+		driver.quit();
 		
 
 	}

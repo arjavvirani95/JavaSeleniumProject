@@ -29,6 +29,8 @@ public class FluentWaitDemo {
 		//usage
 	    WebElement username=(WebElement) mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Username']")));
 		username.sendKeys("Admin");
+		
+		driver.quit();
 	
 
 	}
