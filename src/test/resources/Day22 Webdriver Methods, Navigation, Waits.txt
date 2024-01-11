@@ -32,6 +32,7 @@ browser methods
 ---------------
 close() 
 - close single browser window
+eg: if we open new window through first one it will close focused window means first window.
 
 quit()
 - close all the windows which was open by webdriver instance
