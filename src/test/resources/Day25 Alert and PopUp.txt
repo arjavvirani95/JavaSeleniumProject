@@ -34,7 +34,7 @@ accept() // this will close alert window using ok button
 dismiss() // close alert window by using cancel button
 getText() // Get the text from alert window
 
-=>Alert is not an WebElement its Window
+=>Alert is not an WebElement its Window, Alert is interface which coming from Alert class.
 
 =>So we need to switch to that window from current web page window with Alert Class.
 driver.findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
@@ -44,7 +44,7 @@ Alert alertwindow=mywait.until(ExpectedConditions.alertIsPresent());
 =>After that we need to wait for to present the window with any wait implicit/explicit
 Alert alertwindow=mywait.until(ExpectedConditions.alertIsPresent());
 
-=>And at the last we can accept it or dismiss it with help of accept() and dismiss() function of Alert class.
+=>And at the last we can accept it or dismiss it with help of accept() and dismiss() function of Alert Interface.
 alertwindow.accept(); 
 alertwindow.dismiss(); 
 

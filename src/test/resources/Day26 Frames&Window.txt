@@ -1,0 +1,52 @@
+Day-26
+-------
+frames/iframe
+
+Frames => sometimes developer build websites into multiple frame, if we wants to interact with this frames of element then we need to switch to that frame first and perform any action. This is called Frames
+
+iFrame => Sometime developer used thrid party url webform and implemented into current web page that is called iframe! Why? Becouse developer does not want to write that code instead of use those already buildin web forms or any web page!
+
+=>if wants to come back to default web page
+driver.switchTo().defaultContent();
+
+=>if selenium not able to find frame it will throw NoSuchFrameException
+
+=>
+driver.switchTo().frame(name/id)
+driver.switchTo().frame(WebElement)
+driver.switchTo().frame(index)
+
+
+handle browser windows
+-------------------------------------------
+
+getWindowHandle() - return id of single window( in which driver focused)
+getWindowHandles()- returns id's of multiple windows
+
+driver.switchTo().window(window id)
+
+driver.switchTo().window(window id).getTitle()
+
+many browser windows opened
+
+close() - close single browser window which is focud by driver.
+quit() - close all the browser windows which are currently opened
+
+3 types of switching commands
+---
+1) driver.switchTo().alert()
+2)  driver.switchTo().frame()
+3) driver.switcho().window()
+
+Assignments
+------------
+Search, Opening links, switch to browser windows, capture titles, close all browser windows
+	https://testautomationpractice.blogspot.com/
+
+iframe:
+	http://the-internet.herokuapp.com/iframe
+
+
+
+
+
