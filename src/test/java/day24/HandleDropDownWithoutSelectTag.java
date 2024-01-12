@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HandleDropDownWithoutSelectTag {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		 
 		ChromeDriver driver=new ChromeDriver();
 
@@ -21,7 +21,7 @@ public class HandleDropDownWithoutSelectTag {
 		
 		
 		//clicking on the dropdown
-		driver.findElement(By.xpath("//button[contains(@class,'multiselect')]")).click();
+		driver.findElement(By.xpath("//button[@type='button'and contains(@class,'multiselect')]")).click();
 		
 		List<WebElement> options=driver.findElements(By.xpath("//ul[contains(@class,multiselect)]//label"));
 		
@@ -56,6 +56,9 @@ public class HandleDropDownWithoutSelectTag {
 				option.click();
 			}
 		}
+		
+		Thread.sleep(2000);
+		driver.quit();
 			
 
 	}
