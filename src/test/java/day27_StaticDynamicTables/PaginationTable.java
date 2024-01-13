@@ -6,16 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
+ 
 
 public class PaginationTable {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		WebDriverManager.chromedriver().setup();
-		
-		WebDriver driver=new ChromeDriver();
+		ChromeDriver driver=new ChromeDriver(); 
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
@@ -48,7 +45,6 @@ public class PaginationTable {
 		
 			
 		int total_pages=Integer.parseInt(text.substring(text.indexOf("(")+1,text.indexOf("Pages")-1));
-		
 		
 		System.out.println("Total number of pages:"+total_pages);
 		
