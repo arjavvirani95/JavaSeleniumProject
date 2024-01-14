@@ -1,0 +1,41 @@
+Day-32
+--------
+Data Driven testing
+--------------
+Excel
+
+Apache poi - API used for automating ms documents- excel.
+
+Excel File-->Workbook-->Sheets---->Rows--->Cells
+
+*reading data from excel) focus the each class of object how its used in each other file, workbook, sheet etc..!
+
+=>Read the file
+FileInputStream file=new FileInputStream("Excel File Path");
+
+=>Read the workbook
+XSSFWorkbook workbook=new XSSFWorkbook(file);
+
+=>Read the Current Sheet
+XSSFSheet sheet=workbook.getSheet("Sheet name");
+
+*writing data into excel
+
+https://mvnrepository.com/artifact/org.apache.poi/poi/5.2.5
+https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml/5.2.5
+
+
+
+
+FileInputStream
+FileOutputStream
+
+XSSFWorkbook
+XSSFSheet
+XSSFRow
+XSSFCell
+
+
+
+
+

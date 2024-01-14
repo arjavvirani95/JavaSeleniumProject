@@ -1,0 +1,43 @@
+Day-22
+---------
+1) get methods
+2) conditional methods
+3) Browser methods
+4) Navigational methods
+5) wait methods
+
+get methods  - we can these methods through webdriver instance
+----------
+get(url)
+getTitle()
+getCurrentURL()
+getPageSource()
+getWindowHandle()=> It will return set collection data! 
+getwindowHandles()=> It will return multiple data set collection
+	String handle= driver.getWindowHandle();
+	Set<String> handle= driver.getWindowHandles();
+	for (String handle : driver.getWindowHandles()){
+	driver.switchTo().window(handle);}
+
+conditional commands - access these commands thorugh WebElement
+----------------------
+Returns true/false ( boolean values)
+
+isDisplayed()
+isEnabled() => Beahviour of an element, eg: input text box is enabled or disabled!
+isSelected() => specially for checkbox and radio button whether to validate its checked or selected
+
+
+browser methods
+---------------
+close() 
+- close single browser window
+eg: if we open new window through first one it will close focused window means first window.
+
+quit()
+- close all the windows which was open by webdriver instance
+
+
+
+
+

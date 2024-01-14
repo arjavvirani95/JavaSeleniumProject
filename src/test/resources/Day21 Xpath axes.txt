@@ -1,0 +1,85 @@
+Day-21
+-------
+
+
+Multiple attribute in xpath
+--------
+//input[@name='username'][@placeholder='Username']
+
+//input[@name='username' and @placeholder='Username']
+//input[@name='xyz' or @placeholder='Username']
+
+
+multiple attributes in xpath
+last()
+text()
+starts-with()
+contains()
+and
+or
+----------------------------------------
+kalyan- ancestor
+Manji - parent
+Dhaval- preceding-sibling
+Arjav - Self Node
+ganesh- child(1)
+nilan - descedant
+kartik- child(2)
+Jinal - following-sibling
+
+
+Parent
+//tagname[@attribute='value']/parent::tagname(parent element)
+//tagname[@attribute='value']/parent::*
+//tagname[@attribute='value']/..
+
+child
+//tagname[@attribute='value']/child::tagname(child element)
+//tagname[@attribute='value']/child(child element)
+
+descedant
+//tagname[@attribute='value']/descedant::tagname(child of child=>decedant)
+//tagname[@attribute='value']//tagname(child of child=>decedant)
+
+ancestor
+//tagname[@attribute='value']/ancestor::tagname(parent to parent=>ancestor)
+//tagname[@attribute='value']/ancestor::*
+
+following
+//tagname[@attribute='value']/following::tagname(down element=>following)[index]=> depends on which one we want
+
+following-sibling(in same hirarchey)
+//tagname[@attribute='value']/following-sibling::tagname(down element=>following)
+
+preceding
+//tagname[@attribute='value']/preceding::tagname(upper element=>preceding)[index]=> depends on which one 
+we want
+
+preceding-sibling(in same hirarchey)
+//tagname[@attribute='value']/preceding-sibling::tagname(upper element=>preceding)
+
+
+
+
+//form[id='frmLogin]/tagname(child element)
+//form[@id=‘txtUsername’]/descendant:: input[1]
+
+XPath Axes
+---------------
+https://www.youtube.com/playlist?list=PLUDwpEzHYYLut2OnS4GlY7fiSAabRmsz3
+
+1) what is dot here  
+
+//a[contains(.,'test labs')];    // what is . here ???                                                            
+
+
+
+
+
+
+
+
+
+
+
+

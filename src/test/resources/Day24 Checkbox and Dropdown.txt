@@ -1,0 +1,55 @@
+Day-24
+-------
+Check boxes 
+Dropdowns
+----------
+1) Drop down having select tag in DOM.(Document Object Model)
+=>Create the object through webelement with that object we will select the dropdown option with select class from selenium.
+=>selectByVisibleText("USA")
+=>selectByValue("4")
+=>selectByIndex(3)
+
+*Find total options in dropdown? => getOptions()
+List<WebElement> options=elementObject.getOptions();
+
+*Print the all option in console? => With help of for loop
+System.out.println(options.get(i).getText());
+
+
+2) DropDown not having select tag in DOM ( input/div) - Bootstrap dropdown
+=>first we need to expand the dropdown
+	driver.findElement(By.xpath("//button[@type='button'and 	contains(@class,'multiselect')]")).click();
+=>second we need to get all the options
+	List<WebElement> 	options=driver.findElements(By.xpath("//ul[contains(@class,multiselect)]//label"));
+=>With the help of option and for loop will click or select option!
+	for(WebElement option:options)
+	{
+		String text=option.getText();
+		if(text.equals("Java") || text.equals("Python"))
+		{
+			option.click();
+		}
+	}
+
+3) Auto Suggest drop down ( Dynamic)
+
+
+
+
+
+
+*How to get selected option using Selenium WebDriver with Java?
+Select select = new Select(driver.findElement(By.xpath("//select")));
+WebElement option = select.getFirstSelectedOption();
+String defaultItem = option.getText();
+System.out.println(defaultItem );
+
+Select class
+
+
+Assignment
+-------
+1) Handle dropdown without using Select Class 
+
+Select Country & State
+https://phppot.com/demo/jquery-dependent-dropdown-list-countries-and-states/
