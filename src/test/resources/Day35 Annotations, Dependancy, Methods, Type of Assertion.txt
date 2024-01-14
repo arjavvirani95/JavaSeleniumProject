@@ -16,8 +16,6 @@ Annotations
 @BeforeSuite
 @AfterSuite
 
-
-
 Suite-->Tests--->Classes--->Methods
 
 XML -- Tests----Classes--->Methods
@@ -38,8 +36,13 @@ TC1
 3) Advanced search  - @Test
 4) Logout  - @AfterClass
 
-Dependecy methods
+Dependecy methods(Advantage of TestNG which is not available in JUnit)
 ----------
+*Why need?
+=>If we want to execute some method only after excecution of another method!
+
+*How work?
+If Dependent Method which is depend on another Method, if that method failed than Dependet method will skip!
 
 
 Assertions

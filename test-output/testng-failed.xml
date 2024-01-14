@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day34_IntroTestNG_Annotation.SecondTest">
+      <class name="day35_Annotations_DependencyMethods_Assert.DependentMethods">
         <methods>
-          <include name="closeApp"/>
+          <include name="openapp"/>
           <include name="login"/>
+          <include name="advsearch"/>
+          <include name="search"/>
         </methods>
-      </class> <!-- day34_IntroTestNG_Annotation.SecondTest -->
+      </class> <!-- day35_Annotations_DependencyMethods_Assert.DependentMethods -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
