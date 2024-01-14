@@ -6,14 +6,11 @@ import org.testng.asserts.SoftAssert;
 
 public class HardVsSoftAssertions {
 
-	//@Test
+	@Test(priority = 1)
 	void test_hardassertions()
 	{
 
-		System.out.println("testing....");
-		System.out.println("testing....");
-		System.out.println("testing....");
-		System.out.println("testing....");
+		System.out.println("testing Hard assertion...."); 
 
 		Assert.assertEquals(1, 2);  // if it will fail then below statement will not be executed..
 
@@ -21,19 +18,16 @@ public class HardVsSoftAssertions {
 		Assert.assertEquals(1, 1);
 	}
 
-	@Test
+	@Test(priority = 2)
 	void test_softassertions()
 	{
-		System.out.println("testing....");
-		System.out.println("testing....");
-		System.out.println("testing....");
-		System.out.println("testing....");
+		System.out.println("testing Soft assertion...."); 
 
 		SoftAssert sa=new SoftAssert();
 		sa.assertEquals(1, 2); 
 
 		System.out.println("soft assertion completed.....");
-		//sa.assertEquals(1, 1);
+		sa.assertEquals(1, 1);
 
 		sa.assertAll(); // mandatory
 

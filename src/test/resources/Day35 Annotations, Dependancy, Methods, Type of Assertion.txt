@@ -45,24 +45,29 @@ Dependecy methods(Advantage of TestNG which is not available in JUnit)
 If Dependent Method which is depend on another Method, if that method failed than Dependet method will skip!
 
 
-Assertions
+Assertions (validations)
 ----------
-validations
+*why need?
+=>In the if else conditioned what happened when there is failed scenario then in TestNG wont show the failed method it will just print in the console!
+
+*How it work?
+With the help of Assert Class!
 
 Hard assertions
-----
+---------------
 access though 'Assert' class
 all methods are static
 if hard assertion got failed then rest of the statement will not be executed.
 
 Soft assertions
------------
+----------------
 access through 'SoftAssert' object
-
 SoftAssert sa=new SoftAssert();
 sa.assertTrue()
-
 if soft assertion got failed then rest of the statemetns still execute.
+
+*What is Hard And Soft Assertion in TestNG?
+=>We have used Hard assert and Soft assert, while applying Hard assert if we found any glitch in expected and actual conditioned then it will through exception then rest of the statement will not be executed, and move to next @test while Soft assert it won’t give exception it will failed then rest of the statemetns still execute. And to get all the exceptions in console we need to write at the end sa.assertAll();
 
 
 

@@ -11,12 +11,9 @@ public class HardAssertions {
 		//int x=10;
 		//int y=15;
 
-		/*if(x==y)
-		{
+		/*if(x==y) {
 			System.out.println("test passed");
-		}
-		else
-		{
+		} else {
 			System.out.println("test failed");
 		}*/
 
@@ -25,26 +22,21 @@ public class HardAssertions {
 		//Assert.assertTrue(true);  //pass
 		//Assert.assertTrue(false);  //pass
 
-		int a=10;
-		int b=20;
+		/*int a=20;
+		int b=15;
+		Assert.assertEquals(a, b, "We are expecting both the a and b value shoud be the same");
+		Assert.assertEquals(a>b,true,"a is not greater than b");  //false
+		*/
 
-		// Assert.assertEquals(actual, expected, description)
-		//Assert.assertEquals(a>b,true,"a is not greater than b");  //false
-
-
-		String s1="abc";
+		/*String s1="abc";
 		String s2="abc1";
-
-		//Assert.assertEquals(s1,s2,"string are not equal"); // pass
-
-		//Assert.assertNotEquals(s1, s2);  // fail
-
-		if(false)
-		{
+		Assert.assertEquals(s1,s2,"string are not equal"); // pass
+		Assert.assertNotEquals(s1, s2);  // fail
+		*/
+		
+		if(false) {
 			Assert.assertTrue(true);
-		}
-		else
-		{
+		} else {
 			//Assert.assertTrue(false);
 			Assert.fail();
 
