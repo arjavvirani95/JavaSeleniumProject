@@ -15,7 +15,8 @@ public class ReadingExcel {
 
 	public static void main(String[] args) throws IOException {
 		
-		 
+		
+		
 		FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\src\\TestData\\data.xlsx");
 		
 		XSSFWorkbook workbook=new XSSFWorkbook(file);
