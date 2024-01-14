@@ -1,0 +1,17 @@
+*To check what are the changes?
+=>git status
+
+*To add all code to the stage?
+=>git add .
+
+*To check in which branch we are going to commit?
+=>git branch
+
+*To change or checkout to other branch?
+=>git fetch && git checkout branch_name
+
+*To commit code to the remote branch?
+=>git commit -m "commit message"
+
+*To push code to the branch?
+=>git push

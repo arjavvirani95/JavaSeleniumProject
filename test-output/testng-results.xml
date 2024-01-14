@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-14T13:03:12 EST" name="Default suite" finished-at="2024-01-14T13:03:20 EST" duration-ms="7416">
+  <suite started-at="2024-01-14T14:25:58 EST" name="Suite" finished-at="2024-01-14T14:26:08 EST" duration-ms="9632">
     <groups>
     </groups>
-    <test started-at="2024-01-14T13:03:12 EST" name="Default test" finished-at="2024-01-14T13:03:20 EST" duration-ms="7416">
+    <test started-at="2024-01-14T14:25:58 EST" name="Test" finished-at="2024-01-14T14:26:08 EST" duration-ms="9632">
       <class name="day34_IntroTestNG_Annotation.SecondTest">
-        <test-method signature="openApp()[pri:10, instance:day34_IntroTestNG_Annotation.SecondTest@6631f5ca]" started-at="2024-01-14T13:03:13 EST" name="openApp" finished-at="2024-01-14T13:03:19 EST" duration-ms="6395" status="PASS">
+        <test-method signature="openApp()[pri:1, instance:day34_IntroTestNG_Annotation.SecondTest@5ace1ed4]" started-at="2024-01-14T14:25:58 EST" name="openApp" finished-at="2024-01-14T14:26:05 EST" duration-ms="6959" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="login()[pri:50, instance:day34_IntroTestNG_Annotation.SecondTest@6631f5ca]" started-at="2024-01-14T13:03:19 EST" name="login" finished-at="2024-01-14T13:03:19 EST" duration-ms="528" status="PASS">
+        <test-method signature="login()[pri:2, instance:day34_IntroTestNG_Annotation.SecondTest@5ace1ed4]" started-at="2024-01-14T14:26:05 EST" name="login" finished-at="2024-01-14T14:26:07 EST" duration-ms="2075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="closeApp()[pri:100, instance:day34_IntroTestNG_Annotation.SecondTest@6631f5ca]" started-at="2024-01-14T13:03:19 EST" name="closeApp" finished-at="2024-01-14T13:03:20 EST" duration-ms="455" status="PASS">
+        <test-method signature="closeApp()[pri:3, instance:day34_IntroTestNG_Annotation.SecondTest@5ace1ed4]" started-at="2024-01-14T14:26:07 EST" name="closeApp" finished-at="2024-01-14T14:26:08 EST" duration-ms="551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- day34_IntroTestNG_Annotation.SecondTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="day34_IntroTestNG_Annotation.ThirdTestCase">
+        <test-method signature="test1()[pri:0, instance:day34_IntroTestNG_Annotation.ThirdTestCase@3514a4c0]" started-at="2024-01-14T14:26:08 EST" name="test1" finished-at="2024-01-14T14:26:08 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:1, instance:day34_IntroTestNG_Annotation.ThirdTestCase@3514a4c0]" started-at="2024-01-14T14:26:08 EST" name="test2" finished-at="2024-01-14T14:26:08 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:2, instance:day34_IntroTestNG_Annotation.ThirdTestCase@3514a4c0]" started-at="2024-01-14T14:26:08 EST" name="test3" finished-at="2024-01-14T14:26:08 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- day34_IntroTestNG_Annotation.ThirdTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

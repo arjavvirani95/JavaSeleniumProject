@@ -44,7 +44,7 @@ Test case
 
 If you do not add @Test annotation then testng will not execute that method.
 
-XML File
+XML File(we can calles as suite)
 ----
 1) Create manually
 2) Generate automatically
