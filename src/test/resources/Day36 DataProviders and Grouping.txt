@@ -1,0 +1,29 @@
+Day-36
+---------
+Grouping
+*why
+=>If we want to run for particular testing like functional, regression, integration
+
+*How?
+=>Need to defined group in @test method argument
+@Test(priority=8,groups= {"sanity","regression"})
+
+In XML file we can inlcude and exclude this before <class> tag
+<groups>
+  <run>
+  	<include name="regression" />
+  	<exclude name="sanity" />
+  </run>
+ </groups>
+ <classes>
+     	<class name="day36_DataProviders_Grouping.Grouping"/>
+ </classes>
+
+
+Parameterization
+---------
+Passing parameters to the tests.
+
+*how we can achived?
+=>With the help of @DataProvider and XML.
+

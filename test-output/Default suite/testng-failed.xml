@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions">
+      <class name="day36_DataProviders_Grouping.DataProviderDemo">
         <methods>
-          <include name="test_hardassertions"/>
-          <include name="test_softassertions"/>
+          <include name="testLogin" invocation-numbers="0 1 2 3"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions -->
+      </class> <!-- day36_DataProviders_Grouping.DataProviderDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

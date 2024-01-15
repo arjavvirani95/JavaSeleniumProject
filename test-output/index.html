@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\arjavkumar.virani\AppData\Local\Temp\testng-eclipse--1013084830\testng-customsuite.xml</span>
+                    <span>C:\Users\arjavkumar.virani\AppData\Local\Temp\testng-eclipse-1140787220\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">5 methods, 4 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,15 +104,39 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions" class="method navigator-link" hash-for-method="test_hardassertions">test_hardassertions</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="day36_DataProviders_Grouping.DataProviderDemo" class="method navigator-link" hash-for-method="testLogin(pavanoltraining@gmail.com, test3)">testLogin(pavanoltraining@gmail.com, test3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions" class="method navigator-link" hash-for-method="test_softassertions">test_softassertions</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="day36_DataProviders_Grouping.DataProviderDemo" class="method navigator-link" hash-for-method="testLogin(pavanoltraining@gmail.com, test@123)">testLogin(pavanoltraining@gmail.com, test@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="day36_DataProviders_Grouping.DataProviderDemo" class="method navigator-link" hash-for-method="testLogin(abc@gmail.com, test123)">testLogin(abc@gmail.com, test123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="day36_DataProviders_Grouping.DataProviderDemo" class="method navigator-link" hash-for-method="testLogin(pavanol@gmail.com, test@123)">testLogin(pavanol@gmail.com, test@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="day36_DataProviders_Grouping.DataProviderDemo" class="method navigator-link" hash-for-method="testLogin(arjav.virani95@yopmail.com, Urt#4567)">testLogin(arjav.virani95@yopmail.com, Urt#4567)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,22 +151,23 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions</span>
+              <span class="class-name">day36_DataProviders_Grouping.DataProviderDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_hardassertions">
-                  </a> <!-- test_hardassertions -->
-                  <span class="method-name">test_hardassertions</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [2] but found [1]
+                  <a name="testLogin(pavanoltraining@gmail.com, test3)">
+                  </a> <!-- testLogin(pavanoltraining@gmail.com, test3) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(pavanoltraining@gmail.com, test3)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [nopCommerce demo store. Login] but found [nopCommerce demo store]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at org.testng.Assert.assertEquals(Assert.java:917)
-	at day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions.test_hardassertions(HardVsSoftAssertions.java:15)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at day36_DataProviders_Grouping.DataProviderDemo.testLogin(DataProviderDemo.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -177,14 +202,110 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_softassertions">
-                  </a> <!-- test_softassertions -->
-                  <span class="method-name">test_softassertions</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	expected [2] but found [1]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions.test_softassertions(HardVsSoftAssertions.java:32)
+                  <a name="testLogin(pavanoltraining@gmail.com, test@123)">
+                  </a> <!-- testLogin(pavanoltraining@gmail.com, test@123) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(pavanoltraining@gmail.com, test@123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [nopCommerce demo store. Login] but found [nopCommerce demo store]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at day36_DataProviders_Grouping.DataProviderDemo.testLogin(DataProviderDemo.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(abc@gmail.com, test123)">
+                  </a> <!-- testLogin(abc@gmail.com, test123) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(abc@gmail.com, test123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [nopCommerce demo store. Login] but found [nopCommerce demo store]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at day36_DataProviders_Grouping.DataProviderDemo.testLogin(DataProviderDemo.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(pavanol@gmail.com, test@123)">
+                  </a> <!-- testLogin(pavanol@gmail.com, test@123) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(pavanol@gmail.com, test@123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [nopCommerce demo store. Login] but found [nopCommerce demo store]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at day36_DataProviders_Grouping.DataProviderDemo.testLogin(DataProviderDemo.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -219,10 +340,26 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">day36_DataProviders_Grouping.DataProviderDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(arjav.virani95@yopmail.com, Urt#4567)">
+                  </a> <!-- testLogin(arjav.virani95@yopmail.com, Urt#4567) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(arjav.virani95@yopmail.com, Urt#4567)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\arjavkumar.virani\AppData\Local\Temp\testng-eclipse--1013084830\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\arjavkumar.virani\AppData\Local\Temp\testng-eclipse-1140787220\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -231,7 +368,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions&quot;/&gt;
+      &lt;class name=&quot;day36_DataProviders_Grouping.DataProviderDemo&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -271,20 +408,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test_hardassertions')
-data.setCell(0, 2, 'day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions')
-data.setCell(0, 3, 9);
+data.setCell(0, 1, 'testLogin')
+data.setCell(0, 2, 'day36_DataProviders_Grouping.DataProviderDemo')
+data.setCell(0, 3, 1976);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test_softassertions')
-data.setCell(1, 2, 'day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions')
-data.setCell(1, 3, 4);
+data.setCell(1, 1, 'testLogin')
+data.setCell(1, 2, 'day36_DataProviders_Grouping.DataProviderDemo')
+data.setCell(1, 3, 971);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testLogin')
+data.setCell(2, 2, 'day36_DataProviders_Grouping.DataProviderDemo')
+data.setCell(2, 3, 590);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLogin')
+data.setCell(3, 2, 'day36_DataProviders_Grouping.DataProviderDemo')
+data.setCell(3, 3, 541);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLogin')
+data.setCell(4, 2, 'day36_DataProviders_Grouping.DataProviderDemo')
+data.setCell(4, 3, 530);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 ms</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -310,19 +459,43 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">test_hardassertions</span>
+              <div class="chronological-class-name">day36_DataProviders_Grouping.DataProviderDemo</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(abc@gmail.com, test123)</span>
+                <span class="method-start">2894 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test_softassertions</span>
-                <span class="method-start">14 ms</span>
+                <span class="method-name">testLogin(pavanol@gmail.com, test@123)</span>
+                <span class="method-start">4875 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(pavanoltraining@gmail.com, test3)</span>
+                <span class="method-start">5467 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(pavanoltraining@gmail.com, test@123)</span>
+                <span class="method-start">6011 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(arjav.virani95@yopmail.com, Urt#4567)</span>
+                <span class="method-start">6543 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7516 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
