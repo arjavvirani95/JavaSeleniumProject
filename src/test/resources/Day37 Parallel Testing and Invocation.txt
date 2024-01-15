@@ -1,11 +1,14 @@
 Day-37
 ------
-Parameterization
----
-1) @DataProvider
 
+1) InvocationCount
+*Why?
+=>sometimes you know your application is broking somewhere if you run that flow many times, so here invocation feature we can use from TestNg. 
 
-invocationCount
+*How you will run?
+=> we need to invoke that test using invocationCount
+@Test(invocationCount=10)
+
 
 2) XML - Parallel testing
 

@@ -32,8 +32,8 @@ public class DataProviderDemo {
 		Assert.assertEquals(exp_title, act_title);
 	}
 
-	@DataProvider(name="dp")
-	String [][] loginData()
+	@DataProvider(name="dp", indices = {0,1,4})
+	String[][] loginData()
 	{
 		String data[][]= {  
 				{ "abc@gmail.com", "test123" }, 

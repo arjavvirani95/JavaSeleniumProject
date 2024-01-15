@@ -1,54 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="1" failed="4" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-15T12:03:46 EST" name="Default suite" finished-at="2024-01-15T12:03:53 EST" duration-ms="7816">
+  <suite started-at="2024-01-15T14:43:33 EST" name="mysuite" finished-at="2024-01-15T14:43:47 EST" duration-ms="14128">
     <groups>
     </groups>
-    <test started-at="2024-01-15T12:03:46 EST" name="Default test" finished-at="2024-01-15T12:03:53 EST" duration-ms="7816">
-      <class name="day36_DataProviders_Grouping.DataProviderDemo">
-        <test-method is-config="true" signature="setup()[pri:0, instance:day36_DataProviders_Grouping.DataProviderDemo@53fdffa1]" started-at="2024-01-15T12:03:46 EST" name="setup" finished-at="2024-01-15T12:03:48 EST" duration-ms="2885" status="PASS">
+    <test started-at="2024-01-15T14:43:33 EST" name="edge test" finished-at="2024-01-15T14:43:46 EST" duration-ms="12685">
+      <class name="day37_ParallelTesting_InvocationCount.ParamTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:day37_ParallelTesting_InvocationCount.ParamTest@6cd28fa7]" started-at="2024-01-15T14:43:33 EST" name="setup" finished-at="2024-01-15T14:43:45 EST" duration-ms="11955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:day36_DataProviders_Grouping.DataProviderDemo@53fdffa1]" started-at="2024-01-15T12:03:48 EST" name="testLogin" data-provider="dp" finished-at="2024-01-15T12:03:50 EST" duration-ms="1976" status="FAIL">
+        <test-method signature="testLogo()[pri:1, instance:day37_ParallelTesting_InvocationCount.ParamTest@6cd28fa7]" started-at="2024-01-15T14:43:45 EST" name="testLogo" finished-at="2024-01-15T14:43:45 EST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogo -->
+        <test-method signature="testHomePageTitle()[pri:2, instance:day37_ParallelTesting_InvocationCount.ParamTest@6cd28fa7]" started-at="2024-01-15T14:43:45 EST" name="testHomePageTitle" finished-at="2024-01-15T14:43:45 EST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageTitle -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:day37_ParallelTesting_InvocationCount.ParamTest@6cd28fa7]" started-at="2024-01-15T14:43:45 EST" name="closeApp" finished-at="2024-01-15T14:43:46 EST" duration-ms="640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- day37_ParallelTesting_InvocationCount.ParamTest -->
+    </test> <!-- edge test -->
+    <test started-at="2024-01-15T14:43:46 EST" name="chrome test" finished-at="2024-01-15T14:43:47 EST" duration-ms="1419">
+      <class name="day37_ParallelTesting_InvocationCount.ParamTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:day37_ParallelTesting_InvocationCount.ParamTest@3cebbb30]" started-at="2024-01-15T14:43:46 EST" name="setup" finished-at="2024-01-15T14:43:47 EST" duration-ms="1393" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[abc@gmail.com]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[test123]]>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[expected [nopCommerce demo store. Login] but found [nopCommerce demo store]]]>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.217 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'CANTRN565456L', ip: '192.168.40.14'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [nopCommerce demo store. Login] but found [nopCommerce demo store]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at day36_DataProviders_Grouping.DataProviderDemo.testLogin(DataProviderDemo.java:32)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.217 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'CANTRN565456L', ip: '192.168.40.14'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at day37_ParallelTesting_InvocationCount.ParamTest.setup(ParamTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -67,48 +112,53 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:day36_DataProviders_Grouping.DataProviderDemo@53fdffa1]" started-at="2024-01-15T12:03:50 EST" name="testLogin" data-provider="dp" finished-at="2024-01-15T12:03:51 EST" duration-ms="590" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pavanol@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test@123]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- setup -->
+        <test-method signature="testLogo()[pri:1, instance:day37_ParallelTesting_InvocationCount.ParamTest@3cebbb30]" started-at="2024-01-15T14:43:47 EST" name="testLogo" finished-at="2024-01-15T14:43:47 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[expected [nopCommerce demo store. Login] but found [nopCommerce demo store]]]>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.217 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'CANTRN565456L', ip: '192.168.40.14'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [nopCommerce demo store. Login] but found [nopCommerce demo store]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at day36_DataProviders_Grouping.DataProviderDemo.testLogin(DataProviderDemo.java:32)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.217 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'CANTRN565456L', ip: '192.168.40.14'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at day37_ParallelTesting_InvocationCount.ParamTest.setup(ParamTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -127,48 +177,53 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:day36_DataProviders_Grouping.DataProviderDemo@53fdffa1]" started-at="2024-01-15T12:03:51 EST" name="testLogin" data-provider="dp" finished-at="2024-01-15T12:03:52 EST" duration-ms="541" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pavanoltraining@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test3]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- testLogo -->
+        <test-method signature="testHomePageTitle()[pri:2, instance:day37_ParallelTesting_InvocationCount.ParamTest@3cebbb30]" started-at="2024-01-15T14:43:47 EST" name="testHomePageTitle" finished-at="2024-01-15T14:43:47 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[expected [nopCommerce demo store. Login] but found [nopCommerce demo store]]]>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.217 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'CANTRN565456L', ip: '192.168.40.14'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [nopCommerce demo store. Login] but found [nopCommerce demo store]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at day36_DataProviders_Grouping.DataProviderDemo.testLogin(DataProviderDemo.java:32)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.217 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'CANTRN565456L', ip: '192.168.40.14'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at day37_ParallelTesting_InvocationCount.ParamTest.setup(ParamTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -187,91 +242,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:day36_DataProviders_Grouping.DataProviderDemo@53fdffa1]" started-at="2024-01-15T12:03:52 EST" name="testLogin" data-provider="dp" finished-at="2024-01-15T12:03:52 EST" duration-ms="530" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pavanoltraining@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test@123]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [nopCommerce demo store. Login] but found [nopCommerce demo store]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [nopCommerce demo store. Login] but found [nopCommerce demo store]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at day36_DataProviders_Grouping.DataProviderDemo.testLogin(DataProviderDemo.java:32)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- testHomePageTitle -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:day37_ParallelTesting_InvocationCount.ParamTest@3cebbb30]" started-at="2024-01-15T14:43:47 EST" name="closeApp" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1705347827464" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:day36_DataProviders_Grouping.DataProviderDemo@53fdffa1]" started-at="2024-01-15T12:03:52 EST" name="testLogin" data-provider="dp" finished-at="2024-01-15T12:03:53 EST" duration-ms="971" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[arjav.virani95@yopmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Urt#4567]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:day36_DataProviders_Grouping.DataProviderDemo@53fdffa1]" started-at="2024-01-15T12:03:53 EST" name="tearDown" finished-at="2024-01-15T12:03:53 EST" duration-ms="281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- day36_DataProviders_Grouping.DataProviderDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- closeApp -->
+      </class> <!-- day37_ParallelTesting_InvocationCount.ParamTest -->
+    </test> <!-- chrome test -->
+  </suite> <!-- mysuite -->
 </testng-results>

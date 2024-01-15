@@ -24,6 +24,23 @@ Parameterization
 ---------
 Passing parameters to the tests.
 
-*how we can achived?
+*how we can achieved?
 =>With the help of @DataProvider and XML.
 
+
+@Test(dataProvider="dp")
+void method(){}
+
+@DataProvider(name="dp", indices = {0,1,4})
+	String[][] loginData()
+	{
+		String data[][]= {  
+				{ "abc@gmail.com", "test123" }, 
+				{ "pavanol@gmail.com", "test@123" },
+				{ "pavanoltraining@gmail.com", "test3" },
+				{ "pavanoltraining@gmail.com", "test@123" },
+				{ "arjav.virani95@yopmail.com", "Urt#4567" } 
+		};
+
+		return data;
+	}
