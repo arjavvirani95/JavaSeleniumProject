@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-15T15:37:50 EST" name="Suite" finished-at="2024-01-15T15:38:02 EST" duration-ms="11749">
+  <suite started-at="2024-01-15T16:01:41 EST" name="Default suite" finished-at="2024-01-15T16:01:53 EST" duration-ms="11237">
     <groups>
     </groups>
-    <test started-at="2024-01-15T15:37:50 EST" name="Test" finished-at="2024-01-15T15:38:02 EST" duration-ms="11749">
+    <test started-at="2024-01-15T16:01:41 EST" name="Default test" finished-at="2024-01-15T16:01:53 EST" duration-ms="11237">
       <class name="day38_TestNG_Listeners_ExtentReports.NopCommerceTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@58695725]" started-at="2024-01-15T15:37:50 EST" name="setup" finished-at="2024-01-15T15:37:54 EST" duration-ms="3793" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@618425b5]" started-at="2024-01-15T16:01:41 EST" name="setup" finished-at="2024-01-15T16:01:45 EST" duration-ms="3449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@58695725]" started-at="2024-01-15T15:37:54 EST" name="testLogo" finished-at="2024-01-15T15:37:54 EST" duration-ms="57" status="PASS">
+        <test-method signature="testLogo()[pri:1, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@618425b5]" started-at="2024-01-15T16:01:45 EST" name="testLogo" finished-at="2024-01-15T16:01:45 EST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogo -->
-        <test-method signature="testLogin()[pri:2, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@58695725]" started-at="2024-01-15T15:37:54 EST" name="testLogin" finished-at="2024-01-15T15:38:01 EST" duration-ms="6992" status="FAIL">
+        <test-method signature="testLogin()[pri:2, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@618425b5]" started-at="2024-01-15T16:01:45 EST" name="testLogin" finished-at="2024-01-15T16:01:52 EST" duration-ms="6931" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -63,13 +63,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method signature="testLogout()[pri:3, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@58695725]" started-at="2024-01-15T15:38:01 EST" name="testLogout" finished-at="2024-01-15T15:38:01 EST" depends-on-methods="day38_TestNG_Listeners_ExtentReports.NopCommerceTests.testLogin" duration-ms="0" status="SKIP">
+        <test-method signature="testLogout()[pri:3, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@618425b5]" started-at="2024-01-15T16:01:52 EST" name="testLogout" finished-at="2024-01-15T16:01:52 EST" depends-on-methods="day38_TestNG_Listeners_ExtentReports.NopCommerceTests.testLogin" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method NopCommerceTests.testLogout()[pri:3, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@58695725] depends on not successfully finished methods]]>
+              <![CDATA[Method NopCommerceTests.testLogout()[pri:3, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@618425b5] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method NopCommerceTests.testLogout()[pri:3, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@58695725] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method NopCommerceTests.testLogout()[pri:3, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@618425b5] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -95,11 +95,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@58695725]" started-at="2024-01-15T15:38:01 EST" name="tearDown" finished-at="2024-01-15T15:38:02 EST" duration-ms="664" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:day38_TestNG_Listeners_ExtentReports.NopCommerceTests@618425b5]" started-at="2024-01-15T16:01:52 EST" name="tearDown" finished-at="2024-01-15T16:01:53 EST" duration-ms="734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- day38_TestNG_Listeners_ExtentReports.NopCommerceTests -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day38_TestNG_Listeners_ExtentReports.MyTest">
+      <class name="day38_TestNG_Listeners_ExtentReports.NopCommerceTests">
         <methods>
-          <include name="test2"/>
-          <include name="test3"/>
+          <include name="testLogin"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testLogout"/>
         </methods>
-      </class> <!-- day38_TestNG_Listeners_ExtentReports.MyTest -->
+      </class> <!-- day38_TestNG_Listeners_ExtentReports.NopCommerceTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

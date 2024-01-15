@@ -18,19 +18,19 @@ public class ExtentReportManager implements ITestListener
 
 	public void onStart(ITestContext context) {
 			
-		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/reports/myReport.html");//specify location of the report
+		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/reports/myReport.html"); //specify location of the report
 		
 		sparkReporter.config().setDocumentTitle("Automation Report"); // TiTle of report
 		sparkReporter.config().setReportName("Functional Testing"); // name of the report
-		sparkReporter.config().setTheme(Theme.STANDARD);
+		sparkReporter.config().setTheme(Theme.DARK);
 		
 		extent=new ExtentReports();
 		extent.attachReporter(sparkReporter);
 		
 		extent.setSystemInfo("Computer Name","localhost");
 		extent.setSystemInfo("Environment","QA");
-		extent.setSystemInfo("Tester Name","Pavan");
-		extent.setSystemInfo("os","Windows10");
+		extent.setSystemInfo("Tester Name","Arjav");
+		extent.setSystemInfo("os","Windows11");
 		extent.setSystemInfo("Browser name","Chrome,Firefox,Edge");
 					
 	}
