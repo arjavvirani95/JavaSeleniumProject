@@ -12,6 +12,10 @@ Day-37
 
 2) XML - Parallel testing
 
+=>thread count we can put into suite level. Recommended.
+
+=>Always try to run test parallely anyways we can also run classes and methods as parallely!
+
 step1) create test case
 step2) create xml file to run the test
 step3) pass browser name parameter from the xml to setup() method
