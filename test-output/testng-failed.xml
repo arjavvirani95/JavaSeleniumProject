@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day38_TestNG_Listeners_ExtentReports.NopCommerceTests">
+      <class name="day39_PageObjectModel.LoginTest">
         <methods>
           <include name="testLogin"/>
-          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="testLogout"/>
+          <include name="testLogo"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- day38_TestNG_Listeners_ExtentReports.NopCommerceTests -->
+      </class> <!-- day39_PageObjectModel.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
