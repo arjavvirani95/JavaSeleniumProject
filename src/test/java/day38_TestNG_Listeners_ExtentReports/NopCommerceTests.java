@@ -1,4 +1,4 @@
-package day38;
+package day38_TestNG_Listeners_ExtentReports;
 
 import java.time.Duration;
 
@@ -14,22 +14,21 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-//@Listeners(day38.ExtentReportManager.class)
+//@Listeners(day38_TestNG_Listeners_ExtentReports.ExtentReportManager.class)
 public class NopCommerceTests {
-	
-WebDriver driver;
-	
+
+	ChromeDriver driver;
+
 	@BeforeClass
 	void setup()
-	{
-		WebDriverManager.chromedriver().setup();
+	{ 
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	
+
 		driver.get("https://demo.nopcommerce.com/");
 		driver.manage().window().maximize();
 	}
-	
+
 	@Test(priority=1)
 	void testLogo()
 	{
@@ -42,9 +41,9 @@ WebDriver driver;
 		{
 			Assert.assertTrue(false);
 		}
-		
+
 	}
-	
+
 	@Test(priority=2)
 	void testLogin()
 	{
@@ -52,22 +51,22 @@ WebDriver driver;
 		{
 			driver.findElement(By.linkText("Log in")).click(); //Login link
 			Thread.sleep(3000);
-			driver.findElement(By.xpath("//input[@id='Email']")).sendKeys("abc123@gmail.com");
+			driver.findElement(By.xpath("//input[@id='Email']")).sendKeys("test123@yopmail.com");
 			driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("test123");
 			driver.findElement(By.xpath("//button[normalize-space()='Log in']")).click();
 			Thread.sleep(3000);
 			//validation
 			boolean status=driver.findElement(By.linkText("My account")).isDisplayed();
-			Assert.assertEquals(status, true); // this makes testmethod fail
+			Assert.assertEquals(status, false); // this makes testmethod fail
 		}
 		catch(Exception e)
 		{
 			Assert.fail();  // Assert.assertTrue(false)
 		}
-		
-		
+
+
 	}
-	
+
 	@Test(priority=3,dependsOnMethods= {"testLogin"})
 	void testLogout() throws InterruptedException
 	{
@@ -76,8 +75,8 @@ WebDriver driver;
 		boolean status=driver.findElement(By.linkText("Register")).isDisplayed();
 		Assert.assertEquals(status,true);
 	}
-	
-	
+
+
 	@AfterClass
 	void tearDown()
 	{

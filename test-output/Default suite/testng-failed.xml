@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day37_ParallelTesting_InvocationCount.ParamTest">
+      <class name="day38_TestNG_Listeners_ExtentReports.MyTest">
         <methods>
-          <include name="testHomePageTitle"/>
-          <include name="closeApp"/>
-          <include name="setup"/>
-          <include name="testLogo"/>
+          <include name="test2"/>
+          <include name="test3"/>
         </methods>
-      </class> <!-- day37_ParallelTesting_InvocationCount.ParamTest -->
+      </class> <!-- day38_TestNG_Listeners_ExtentReports.MyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
