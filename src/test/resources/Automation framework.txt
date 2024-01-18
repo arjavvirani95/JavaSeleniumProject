@@ -1,0 +1,43 @@
+Automation framework
+--------------
+*what is Maven?
+=>Maven is a widely used build automation and project management tool in the Java software development world. It helps manage the entire build lifecycle of a project, including tasks such as compiling source code, running tests, packaging artifacts, and managing dependencies.
+pom.xml
+
+-----
+dependencies --- download required depency jar for project
+plugins  ---> to compile and run the project
+
+1) maven compiler plugin
+2) maven surefire plugin
+
+1) maven plugin for eclipse
+2) install maven os level
+
+maven download link: https://maven.apache.org/download.cgi
+
+C:\apache-maven-3.9.4\bin
+** configure the maven path in environment variable.
+open cmd prompt --> 		mvn -version
+
+Configure Maven path in Mac
+---------------------------
+In terminal, type echo $SHELL
+In terminal, type vi ~/.zshrc
+Press i for insert and type export MAVEN_HOME=$(/usr/libexec/maven_home)
+Press esc :wq
+exit
+
+echo $MAVEN_HOME
+mvn -version
+
+*How to run Automation project in cmd?
+=>location of project:   C:\workspaces\15-Sept-2023batch\opencart
+
+cd C:\workspaces\15-Sept-2023batch\opencart
+mvn test
+
+Agile Process : https://www.youtube.com/watch?v=h2Xzq2fbafM&pp=ygUKc2RldCBhZ2lsZQ%3D%3D
+Jira Tool :  https://www.youtube.com/watch?v=Wgyirv9juFI&pp=ygUKc2RldCBhZ2lsZQ%3D%3D
+
+

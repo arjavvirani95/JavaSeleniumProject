@@ -1,3 +1,6 @@
+*What is merge conflicts?
+=>Conflicts generally arise when two people have changed the same lines in a file, or if one developer deleted a file while another developer was modifying it. In these cases, Git cannot automatically determine what is correct. Conflicts only affect the developer conducting the merge, the rest of the team is unaware of the conflict. Git will mark the file as being conflicted and halt the merging process. It is then the developers' responsibility to resolve the conflict.
+
 *To check what are the changes?
 =>git status
 
@@ -15,3 +18,104 @@
 
 *To push code to the branch?
 =>git push
+
+
+--------------------------------------------
+
+
+
+
+
+
+
+
+--------------------------------------------
+Class Notes
+--------------------------------------------
+
+Git, Github
+--------------
+Git - local repository ( source code management system / vesrion control system)
+Github - remote repository
+
+pre-requisites:
+-----------
+1) Download & install git software
+	https://git-scm.com/downloads
+
+2) create account with github.com
+	https://github.com/
+
+3) Login to github.com & create  new remote repository. capture url.
+https://github.com/pavanoltraining/opencart.git
+Project work space:  C:\workspaces\15-Sept-2023batch\opencart
+
+4) Create github token for login( create your own token)
+	token : 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
+
+work flow
+---------
+Round 1
+-----
+1)  create a new local repository  (one time)
+=>git init
+
+2) provided user info to git repo. (one time)
+ 
+	git config --global user.name "your name"
+    	git config --global user.email "your email"
+
+
+3) Adding files/folders to staging/indexing
+   git add -A         -->add all the files and folders to staging
+    git add filename
+    git add *.java
+    git add foldername
+
+4) Commit the code into Local(git) repository
+	git commit -m "commit message"
+
+5) connect local repository with remote rep.(One time)
+	git remote add origin "https://github.com/pavanoltraining/opencart.git"
+ 
+6) push the code into remote repository.
+   	git push origin master
+
+
+token : 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
+
+Round 2
+--------
+1) git add -A
+2) git commit -m "commit msge"
+3) git push origin master
+
+SCENARIO 1  :  Getting files from remote repository TO Local repo/workspace
+----
+git pull "https://github.com/pavanoltraining/opencart.git"
+
+
+SCENARIO 2: Getting full project from Remote repository to local
+-----
+git clone "https://github.com/pavanoltraining/opencart.git"
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
