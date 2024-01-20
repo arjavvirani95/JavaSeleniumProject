@@ -19,6 +19,9 @@
 *To push code to the branch?
 =>git push
 
+*To commit in last or past date?
+=>git commit --date="xxx day ago" -m "yyy"
+
 
 --------------------------------------------
 

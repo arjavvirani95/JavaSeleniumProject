@@ -12,7 +12,6 @@ we can access variables only through methods(setters & getters)
 
 static
 -------
-
 1) static methods can access static stuff directly ( without object).
 2) static methods can access non-static stuff through object
 3) non-static methods can access everything directly.

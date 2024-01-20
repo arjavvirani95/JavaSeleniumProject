@@ -21,7 +21,7 @@ char		Character
 booelan		Boolean
 
 
-String    lenght() sunstring() trim() etc....
+String    lenght() substring() trim() etc....
 String s="welcome"
 
 Data Conversion methods
