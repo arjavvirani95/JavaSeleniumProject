@@ -42,7 +42,7 @@ public class StaticTableDemo {
 		
 		//4) Read data from all the rows & columns
 		
-		/*System.out.println("Book Name"+"     "+"Author"+"    "+"Subject"+"       "+"Price");
+		System.out.println("Book Name"+"     "+"Author"+"    "+"Subject"+"       "+"Price");
 		
 		
 		for(int r=2;r<=rows;r++)
@@ -54,7 +54,7 @@ public class StaticTableDemo {
 			}
 			System.out.println();
 		}
-		*/
+		
 			
 		
 		//5) Print book names whose author is Amit
@@ -74,7 +74,7 @@ public class StaticTableDemo {
 		
 		//6)Find sum of prices for all the books
 		
-		int sum=0;
+		/*int sum=0;
 		for(int r=2;r<=rows;r++)
 		{
 			String price=driver.findElement(By.xpath("//table[@name='BookTable']//tr["+r+"]/td[4]")).getText();
@@ -82,7 +82,7 @@ public class StaticTableDemo {
 			
 		}
 		
-		System.out.println("Total price of books:"+sum);
+		System.out.println("Total price of books:"+sum);*/
 	}
 
 }
