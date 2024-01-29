@@ -2,6 +2,11 @@ Day-7
 ------
 Strings
 -----------------
+Strings is Premitive(pre defined class) data types in java!
+
+String is collection of characters!
+
+
 
 String name="John";
 String name=new String("John");
