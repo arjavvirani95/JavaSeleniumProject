@@ -98,6 +98,69 @@ git clone "https://github.com/pavanoltraining/opencart.git"
 
 
 
+-----------------------------------------------------------------------------------------------------------------------
+How to use Eclipse git options
+-----------------------------------------------------------------------------------------------------------------------
+Cucumber Framework
+--------
+Git, Github Jenkins
+-------------
+
+Workspace-->Index/staging--->local repo-->Remote Repo
+	       add                             commit             push
+
+		 	
+Git work flow
+-----------------
+Round 1
+---------------
+1) create github repository then get url
+	https://github.com/pavanoltraining/opencart_cucumber.git
+
+2) Create local repository
+   Right on Project-->Team-->Share Project-->Create Repository-->Finish
+
+3) Adding files to index/staging
+    Right on Project-->Team-->Add to index
+
+4) Commiting files to local/git repository
+Team-->commit-->Provided commit message-->click on commit button.
+
+5) Push the files to remote/github repository
+	Team-->Push Branch Master     (or)
+	Team-->Remote-->Push
+
+	Provide destination repository details in the form.......
+
+Remote name: origin
+	URI:  https://github.com/pavanoltraining/opencart_cucumber.git
+	Host: github.com
+	Repository path: /pavanoltraining/opencart_cucumber.git
+
+	User: github email
+	Password: <<token password>>
+Click on Preview-->Click on Preview-->Click on Push-->Close
+
+Round 2 : Pull from Git Hub
+------------------------
+Team--> Pull  (first/second option)
+
+
+Git tutorials: 
+https://youtube.com/playlist?list=PLUDwpEzHYYLuMNNTu0EdWBeBtXdRhj4Lv&si=DXFFj8HaDxOErrFs
+
+
+Round 2
+--------------
+Team-->Pull
+
+Run the cucumber project in Jenkins  ( select as Maven project)..
+
+
+
+
+
+
 
 
  
