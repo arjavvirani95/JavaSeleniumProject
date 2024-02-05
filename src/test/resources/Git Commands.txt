@@ -20,7 +20,7 @@
 =>git push
 
 *To commit in last or past date?
-=>git commit --date="xxx day ago" -m "yyy"
+=>git commit --date="xx day ago" -m "Message"
 
 
 --------------------------------------------
