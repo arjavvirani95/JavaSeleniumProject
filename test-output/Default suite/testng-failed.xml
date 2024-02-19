@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day39_PageObjectModel.LoginTest">
+      <class name="day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions">
         <methods>
-          <include name="testLogin"/>
-          <include name="setup"/>
-          <include name="testLogo"/>
-          <include name="tearDown"/>
+          <include name="test_hardassertions"/>
+          <include name="test_softassertions"/>
         </methods>
-      </class> <!-- day39_PageObjectModel.LoginTest -->
+      </class> <!-- day35_Annotations_DependencyMethods_Assert.HardVsSoftAssertions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

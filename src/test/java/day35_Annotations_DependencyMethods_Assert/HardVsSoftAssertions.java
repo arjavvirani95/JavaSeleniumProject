@@ -12,7 +12,7 @@ public class HardVsSoftAssertions {
 
 		System.out.println("testing Hard assertion...."); 
 
-		Assert.assertEquals(1, 2);  // if it will fail then below statement will not be executed..
+		Assert.assertEquals(1, 1);  // if it will fail then below statement will not be executed..
 
 		System.out.println("hard assertion completed.....");
 		Assert.assertEquals(1, 1);
@@ -24,7 +24,7 @@ public class HardVsSoftAssertions {
 		System.out.println("testing Soft assertion...."); 
 
 		SoftAssert sa=new SoftAssert();
-		sa.assertEquals(1, 2); 
+		sa.assertEquals(1, 1); 
 
 		System.out.println("soft assertion completed.....");
 		sa.assertEquals(1, 1);
