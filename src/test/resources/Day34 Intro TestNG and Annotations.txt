@@ -12,6 +12,7 @@ Advantages:
 4) Parameterization
 5) parallel testing
 6) Reports
+7) Invocation
 
 
 java/maven project-->webdriver--> testng

@@ -42,7 +42,7 @@ Dependecy methods(Advantage of TestNG which is not available in JUnit)
 =>If we want to execute some method only after excecution of another method!
 
 *How work?
-If Dependent Method which is depend on another Method, if that method failed than Dependet method will skip!
+If Dependent Method which is depend on another Method, if that method failed than Dependent method will skip!
 
 
 Assertions (validations)

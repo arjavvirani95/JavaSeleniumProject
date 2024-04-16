@@ -3,7 +3,7 @@ Day-37
 
 1) InvocationCount
 *Why?
-=>sometimes you know your application is broking somewhere if you run that flow many times, so here invocation feature we can use from TestNg. 
+=>sometimes you know your application is breaking somewhere if you run that flow many times, so here invocation feature we can use from TestNg. 
 
 *How you will run?
 => we need to invoke that test using invocationCount

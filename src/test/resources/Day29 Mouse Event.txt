@@ -16,7 +16,7 @@ build() - create an action
 perform() - can complete the action
 
 
-<input  id='abc' > testing</input>      testing - inner text
+<input  id='abc' > testing </input>      testing - inner text
 findElement(Loc).getText()  ----- testing
 findElement(Loc).getAttribute('value')   - return nothing
 
