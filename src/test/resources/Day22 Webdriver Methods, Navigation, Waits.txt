@@ -6,7 +6,7 @@ Day-22
 4) Navigational methods
 5) wait methods
 
-get methods  - we can these methods through webdriver instance
+get methods  - we can use these methods through webdriver instance
 ----------
 get(url)
 getTitle()

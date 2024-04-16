@@ -42,7 +42,7 @@ xpath having multiple attributes
 xpath functions - text(), normalized-pace(), contains() start-with()
 xpath operators - and      or
 xpath axes - following, preceding, sibling, parent, self, ancestor etc.....
-How to locate elements who attributes are dynamically changing
+How to locate elements whos attributes are dynamically changing
 
 
 
